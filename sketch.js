@@ -82,13 +82,8 @@ function setup() {
   button2.position(30,420);
   button2.size(50,50);
 
-  //button2.Clicked(drop);
-  
-  //button2.mousePress(drop);
-  
-  //button2.mouseClick(drop);
-
-  //button2.mouseClicked(drop);
+ 
+  button2.mouseClicked(drop);
 
   ellipseMode(RADIUS);
 }
@@ -117,13 +112,11 @@ function draw()
    bubble.visible = false;
     World.remove(engine.world,fruit);
     fruit = null;
-    //bunny.change('eating');
 
-    //bunny.changeAnimation('eating');
 
-    //bunny.changeAnimation();
+    bunny.changeAnimation('eating');
 
-    //bunny.Animation('eating');
+  
   }
   
   if(collide(fruit,bubble,40) == true)
